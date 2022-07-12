@@ -10,6 +10,11 @@ void main() {
   );
 }
 
+// StatefulWidget
+// Allows the widget to change state overtime and can contain dynamic data that can change
+// Data that changes overtime will be stored in state object
+// state objects contain values such as numbers that can chage overtime
+
 class NinjaCard extends StatefulWidget {
   @override
   State<NinjaCard> createState() => _NinjaCardState();
@@ -44,8 +49,7 @@ class _NinjaCardState extends State<NinjaCard> {
           children: <Widget>[
             Center(
               child: CircleAvatar(
-                backgroundImage: AssetImage(
-                    "/Users/kwe/flutter-projects/ninja-id-project-basics/ninjaapp/assets/deku.jpeg"),
+                backgroundImage: AssetImage("/assets/deku.jpeg"),
                 radius: 65,
               ),
             ),
@@ -126,3 +130,6 @@ class _NinjaCardState extends State<NinjaCard> {
     );
   }
 }
+
+
+// Creating a stateful widget from scratch
