@@ -21,14 +21,15 @@ class NinjaCard extends StatefulWidget {
 }
 
 class _NinjaCardState extends State<NinjaCard> {
-  int _counter = 0;
+  int _ninjaLevel = 0;
 
-  void _incrementCounter() {
+  void _ninjaLevelCounter() {
+    // setState trigers the build function to rerun
     setState(() {
-      if (_counter < 2) {
-        _counter++;
+      if (_ninjaLevel < 2) {
+        _ninjaLevel++;
       } else {
-        _counter *= 2;
+        _ninjaLevel *= 2;
       }
     });
   }
@@ -89,7 +90,7 @@ class _NinjaCardState extends State<NinjaCard> {
               height: 9.0,
             ),
             Text(
-              "$_counter",
+              "$_ninjaLevel",
               style: TextStyle(
                   color: Colors.amberAccent,
                   letterSpacing: 2.0,
@@ -117,7 +118,7 @@ class _NinjaCardState extends State<NinjaCard> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          return _incrementCounter();
+          return _ninjaLevelCounter();
         },
         tooltip: "Imcrease Ninja Level!",
         backgroundColor: Colors.amberAccent,
