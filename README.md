@@ -1,6 +1,7 @@
 # ninjaapp
 
-A new Demo Flutter project.
+    - A new Demo Flutter project.
+    - The Ninja Level App is a basic app to get you familar with Flutter app development and Widget State.
 
 ## Getting Started
 
@@ -15,5 +16,3 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-
-# The Ninja Level App is a basic app to get you familar with Flutter app development and Widget State
